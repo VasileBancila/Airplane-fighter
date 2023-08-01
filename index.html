@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png"
+        href="https://www.freepnglogos.com/uploads/jet-png/onlinelabels-clip-art-fighter-jet-top-view-30.png">
+    <title>Airplane fighter</title>
+</head>
+
+<body>
+    <h1>Airplane fighter</h1>
+    <canvas id="canvas"></canvas>
+    <h3>Time: </h3>
+    <h3 id="seconds">0</h3><br>
+    <button type="button" onclick="start()">Start</button>
+    <button type="button" onclick="reload()">Reload</button>
+    <script type="text/javascript" src="script.js"> </script>
+</body>
+
+</html>
+
+<!--
+Se va crea un joc în care un avion zboară spre înainte. Din sens opus vin diverse obiecte, 
+iar avionul poate să le evite deplasându-se spre stânga sau spre dreapta. În momentul în care 
+avionul se lovește de un obiect, acesta este distrus, iar jocul se încheie.
+Scorul jucatorului este egal cu numărul de secunde trecute de la începerea jocului.
+La încheierea jocului se va afișa scorul obținut de către jucător.
+Bonus 1
+Scorul jucătorului va fi egal cu numărul de obiecte pe care avionul le-a evitat cu succes.
+Bonus 2
+Avionul are posibilitatea să tragă folosind proiectile în obiectele care se află în fața lui și să le distrugă.
+Scorul va fi egal cu numărul de obiecte distruse.
+-->
