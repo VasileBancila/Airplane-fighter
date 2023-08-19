@@ -12,11 +12,10 @@
 
 <body>
     <h1>Airplane fighter</h1>
-    <canvas id="canvas"></canvas>
-    <h3>Time: </h3>
-    <h3 id="seconds">0</h3><br>
-    <button type="button" onclick="start()">Start</button>
-    <button type="button" onclick="reload()">Reload</button>
+    <canvas width="400" height="400" id="canvas"></canvas>
+    <h3><span id="gameOver"></span> Score: <span id="score">0</span></h3><br>
+    <button type="button" id="startGame" onclick="startGame()">Start</button>
+    <button type="button" id="reload" onclick="reload()">Reload</button>
     <script type="text/javascript" src="script.js"> </script>
 </body>
 
