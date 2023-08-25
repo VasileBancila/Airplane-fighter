@@ -11,9 +11,15 @@
 </head>
 
 <body>
-    <h1>Airplane fighter</h1>
+    <h1><i>Airplane fighter</i></h1>
     <canvas width="400" height="400" id="canvas"></canvas>
-    <h3><span id="gameOver"></span> Score: <span id="score">0</span></h3><br>
+    <h3><i>
+        <span id="gameOver"></span>
+        <span id="withoutBullets"></span><br>
+        Time: <span id="time">0</span>
+        Rockets avoided: <span id="avoidedRockets">0</span>
+        Rockets destroyed: <span id="destroyedRockets">0</span>
+    </i></h3><br>
     <button type="button" id="startGame" onclick="startGame()">Start</button>
     <button type="button" id="reload" onclick="reload()">Reload</button>
     <script type="text/javascript" src="script.js"> </script>
