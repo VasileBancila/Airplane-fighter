@@ -129,6 +129,11 @@ function drawExplosion(ox, oy) {
 	ctx.beginPath();
 	imgExplosion.addEventListener("load", function () {
 		ctx.drawImage(imgExplosion, ox, oy - sizeObj, sizeObj, sizeObj * 2);
+		if (activePlayer) {
+			setTimeout(function () { //deleting the destroyed rackets
+				ctx.clearRect(ox, oy - sizeObj, sizeObj, sizeObj * 2);
+			}, 500);
+		}
 	}, false);
 	ctx.closePath();
 }
